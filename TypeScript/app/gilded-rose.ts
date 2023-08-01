@@ -13,9 +13,7 @@ export class GildedRose {
 
   // TODO 3 This function is unclear. How can it be improved?
   updateQuality() {
-    // Iterate over every inventory item.
     for (let i = 0; i < this.items.length; i++) {
-      // Update at the end of the day the quality and sell in value.
       this.items[i].updateQuality()
     }
 
