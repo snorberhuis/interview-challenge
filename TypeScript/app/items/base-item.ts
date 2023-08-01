@@ -55,7 +55,7 @@ export class BaseItem implements InventoryItem{
    * It returns how much the quality was degraded.
    * @protected
    */
-  protected updateQualityEndOfDay() : number{
+  protected updateQualityEndOfDay() : number {
     // Degrade twice as fast after sellIn date
     const degradation = (this.sellIn < 0) ? 2 : 1
     this.quality -= degradation
@@ -67,6 +67,7 @@ export class BaseItem implements InventoryItem{
   }
 
   updateQuality() {
+    // TODO 1 Enforce the quality constraint
     this.updateQualityEndOfDay()
     this.updateSellInEndOfDay()
   }

@@ -14,8 +14,8 @@ This is the Gilded Rose Interview Challenge in TypeScript.
    2. See if the interviewee writes tests before implementing.
    3. The solution should be implemented.
 4. Ask to implement TODO 2:
-   1. See if overloading knowledge is present or give a tip.
-   2. See how tests cases are elicited
+   1. See how tests cases are elicited
+   2. See how overloading or inheritance is used.  
 5. Ask to implement TODO 3:
    1. See if Domain knowledge is understood
    2. See how the participant talks about clean code.
