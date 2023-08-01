@@ -62,15 +62,6 @@ export class BaseItem implements InventoryItem{
     return degradation
   }
 
-  /**
-   * enforceQualityConstraint enforces the Quality Constraint to be zero.
-   * @protected
-   */
-  protected enforceQualityConstraint() {
-    // TODO 1 Enforce the quality constraint
-    this.quality = (this.quality < 0) ? 0 : this.quality
-  }
-
   getName(): string {
     return this.name
   }
@@ -78,7 +69,6 @@ export class BaseItem implements InventoryItem{
   updateQuality() {
     this.updateQualityEndOfDay()
     this.updateSellInEndOfDay()
-    this.enforceQualityConstraint()
   }
 
 }
